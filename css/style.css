@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.containter {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: 8 rem repeat(8, minmax(min-content, 14rem)); }
+
+.navbar {
+  background-color: #c69963; }
+
+.header {
+  background-color: #54483A; }
+
+.description {
+  background-color: #101d2c; }
+
+.features {
+  background-color: #aaa; }
+
+.story__pictures {
+  background-color: #c69963; }
+
+.story__content {
+  background-color: #aaa; }
+
+.schedule {
+  background-color: #101d2c; }
+
+.gallery {
+  background-color: #54483A; }
+
+.footer {
+  background-color: #101d2c; }
