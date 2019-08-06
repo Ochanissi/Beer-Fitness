@@ -8,6 +8,27 @@
     font-size: 4.5rem;
     color: $color-grey-light-1;
     line-height: 1;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 700;
+        letter-spacing: 2rem;
+        line-height: 1.7;
+
+    }
+
+    &--sub {
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 1.3rem;
+    }
 }
 
 .heading-2 {
