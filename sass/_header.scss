@@ -1,6 +1,20 @@
 .header {
-    background-color: $color-grey-dark-1;
+    background-color: rgba(100, 100, 100, 0.9);
     grid-column: full-start / col-end-6;
+    position: relative;
+
+    &__text-box {
+        display: grid;
+        align-content: center;
+        justify-items: center;
+
+        // height: 85vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
 
 }
 
@@ -11,6 +25,7 @@
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     // grid-gap: 1rem;
     align-items: center;
+    justify-items: center;
 
     max-width: 100rem;
     margin: 0 auto 0;
@@ -57,5 +72,22 @@
     &__logo {
         width: 100px;
         color: #fff;
+    }
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    // opacity: .15;
+    overflow: hidden;
+
+    &__content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
 }
