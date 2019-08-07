@@ -1,6 +1,7 @@
 .header {
     background-color: rgba(100, 100, 100, 0.9);
-    grid-column: full-start / col-end-6;
+    grid-column: full-start / full-end;
+    
     position: relative;
 
     &__text-box {
