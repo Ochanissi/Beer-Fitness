@@ -17,7 +17,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: 100vh 40vw repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
     padding: 40px;
@@ -80,7 +80,7 @@ body {
   cursor: pointer;
   transition: all .2s; }
   .btn:hover {
-    background-color: #B28451; }
+    background-color: #000; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -96,7 +96,7 @@ body {
 
 .header {
   background-color: rgba(100, 100, 100, 0.9);
-  grid-column: full-start / col-end-6;
+  grid-column: full-start / full-end;
   position: relative; }
   .header__text-box {
     display: grid;
@@ -164,20 +164,38 @@ body {
     object-fit: cover; }
 
 .description {
-  background-color: #101d2c;
-  grid-column: col-start 7 / full-end; }
+  background-color: #000; }
+  .description__content {
+    grid-column: center-start / col-end 4;
+    background-color: aqua;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    font-size: 2rem;
+    padding: 2rem 2vw; }
+  .description__pictures {
+    grid-column: col-start 5 / center-end;
+    background-color: red;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 4rem;
+    padding: 20rem 3vw; }
+  .description__img--1 {
+    width: 100%; }
+  .description__img--2 {
+    width: 100%; }
+  .description__img--3 {
+    width: 100%; }
+  .description__img--4 {
+    width: 100%; }
 
 .features {
   background-color: #aaa;
   grid-column: center-start / center-end; }
-
-.story__pictures {
-  background-color: #c69963;
-  grid-column: full-srt / col-end 4; }
-
-.story__content {
-  background-color: #aaa;
-  grid-column: col-end 5 / full-end; }
 
 .schedule {
   background-color: #101d2c;

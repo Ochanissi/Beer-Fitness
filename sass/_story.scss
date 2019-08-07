@@ -1,12 +1,12 @@
-.story {
-    &__pictures {
-        background-color: $color-primary;
-        grid-column: full-srt / col-end 4;
-    }
+// .story {
+//     &__pictures {
+//         background-color: $color-primary;
+//         grid-column: full-start / col-end 4;
+//     }
 
-    &__content {
-        background-color: $color-grey-light-2;
-        grid-column: col-end 5 / full-end;
+//     &__content {
+//         background-color: $color-grey-light-2;
+//         grid-column: col-end 5 / full-end;
 
-    }
-}
+//     }
+// }
