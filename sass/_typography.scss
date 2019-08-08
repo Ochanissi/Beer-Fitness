@@ -33,6 +33,13 @@
     &--desc {
         color: $color-secondary;
     }
+
+    &--sche {
+        text-transform: uppercase;
+        letter-spacing: .8rem;
+        font-size: 4rem;
+        font-weight: 700;
+    }
 }
 
 .heading-2 {
@@ -47,6 +54,19 @@
 
     &--dark {
         color: $color-grey-dark-1;
+    }
+
+    &--sche {
+        color: $color-secondary;
+        text-transform: uppercase;
+        letter-spacing: .8rem;
+        font-size: 8rem;
+        font-weight: 700;
+    }
+
+    &--dash {
+        line-height: 1rem;
+        margin-bottom: 5rem;
     }
 }
 

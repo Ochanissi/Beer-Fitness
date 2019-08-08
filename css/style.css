@@ -48,6 +48,11 @@ body {
     letter-spacing: 1.3rem; }
   .heading-1--desc {
     color: yellow; }
+  .heading-1--sche {
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    font-size: 4rem;
+    font-weight: 700; }
 
 .heading-2 {
   font-size: 4rem;
@@ -57,6 +62,15 @@ body {
     color: #faf9f9; }
   .heading-2--dark {
     color: #333; }
+  .heading-2--sche {
+    color: yellow;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    font-size: 8rem;
+    font-weight: 700; }
+  .heading-2--dash {
+    line-height: 1rem;
+    margin-bottom: 5rem; }
 
 .heading-3 {
   font-size: 1.6rem;
@@ -205,8 +219,18 @@ body {
   grid-column: center-start / center-end; }
 
 .schedule {
-  background-color: yellow;
-  grid-column: center-start / center-end; }
+  grid-column: full-start / full-end;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/back-schedule.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/back-schedule.jpg);
+  background-size: cover;
+  color: #faf9f9;
+  background-attachment: fixed;
+  height: 100vh; }
+  .schedule__title {
+    margin-top: 15rem;
+    margin-left: 20rem; }
+  .schedule__table {
+    margin-left: 20rem; }
 
 .gallery {
   background-color: #333;
