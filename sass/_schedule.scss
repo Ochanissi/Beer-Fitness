@@ -1,4 +1,21 @@
 .schedule {
-    background-color: $color-secondary;
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
+
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/back-schedule.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/back-schedule.jpg);
+
+    background-size: cover;
+    color: $color-grey-light-1;
+    background-attachment: fixed;
+    height: 100vh;
+
+    &__title {
+        margin-top: 15rem;
+        margin-left: 20rem;
+    }
+
+    &__table {
+        margin-left: 20rem;
+    }
+    
 }
