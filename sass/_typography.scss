@@ -29,6 +29,10 @@
         font-weight: 400;
         letter-spacing: 1.3rem;
     }
+
+    &--desc {
+        color: $color-secondary;
+    }
 }
 
 .heading-2 {
@@ -52,6 +56,11 @@
     color: $color-primary;
     text-transform: uppercase;
 
+    &--desc {
+        // color: $color-secondary;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
 
 }
 
@@ -75,9 +84,12 @@
     border-radius: 0;
     font-family: $font-display;
     font-size: 1.5rem;
+    font-weight: 400;
     text-transform: 1.5rem;
     text-transform: uppercase;
+    text-decoration: none;
     padding: 1.8rem 3rem;
+    border-radius: .4rem;
     cursor: pointer;
     transition: all .2s;
 
