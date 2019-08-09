@@ -18,7 +18,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 40vw repeat(4, min-content);
+  grid-template-rows: 100vh 40vw min-content 40vw repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
     padding: 40px;
@@ -193,8 +193,11 @@ body {
     display: grid;
     align-content: center;
     justify-items: center;
+    text-align: center;
     font-size: 2rem;
     padding: 2rem 2vw; }
+    .description__content p {
+      margin-bottom: 5rem; }
   .description__pictures {
     grid-column: col-start 5 / center-end;
     display: grid;
@@ -215,8 +218,18 @@ body {
     width: 100%; }
 
 .features {
-  background-color: #f4f2f2;
-  grid-column: center-start / center-end; }
+  background-color: aqua;
+  grid-column: full-start / full-end;
+  height: 100vh;
+  display: grid; }
+  .features__heading {
+    grid-column: center-start / col-end 4;
+    grid-row: 1 / span 2;
+    min-width: 100rem; }
+  .features__content {
+    grid-column: col-start 5 / center-end;
+    grid-row: 1 / span 2;
+    min-width: 100rem; }
 
 .schedule {
   grid-column: full-start / full-end;
@@ -224,8 +237,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/back-schedule.jpg);
   background-size: cover;
   color: #faf9f9;
-  background-attachment: fixed;
-  height: 200vh; }
+  background-attachment: fixed; }
   .schedule__heading {
     margin-top: 15rem;
     margin-left: 20rem; }
@@ -234,7 +246,8 @@ body {
     background: linear-gradient(to right, #ef5241 0%, #df2674 100%);
     max-width: 70rem;
     padding: 5rem;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 15rem; }
     .schedule__table--details {
       width: 50%;
       display: flex;

@@ -7,7 +7,7 @@
     background-size: cover;
     color: $color-grey-light-1;
     background-attachment: fixed;
-    height: 200vh;
+    // height: 200vh;
 
     &__heading {
         margin-top: 15rem;
@@ -17,12 +17,15 @@
     &__table {
         margin-left: 20rem;
 
+
         background: $color-gradient;
 
         max-width: 70rem;
         padding: 5rem;
 
         text-align: center;
+
+        margin-bottom: 15rem;
 
 
         &--details {

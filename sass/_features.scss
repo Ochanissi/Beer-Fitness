@@ -1,4 +1,25 @@
 .features {
-    background-color: $color-grey-light-2;
-    grid-column: center-start / center-end;
+    background-color: aqua;
+    grid-column: full-start / full-end;
+
+    height: 100vh;
+
+    display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+
+    &__heading {
+        grid-column: center-start / col-end 4;
+        grid-row: 1 / span 2;
+
+        min-width: 100rem;
+    }
+
+    &__content {
+        grid-column: col-start 5 / center-end;
+        grid-row: 1 / span 2;
+
+        min-width: 100rem;
+
+    }
 }
