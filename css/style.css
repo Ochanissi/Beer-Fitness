@@ -226,7 +226,7 @@ body {
   color: #faf9f9;
   background-attachment: fixed;
   height: 100vh; }
-  .schedule__title {
+  .schedule__heading {
     margin-top: 15rem;
     margin-left: 20rem; }
   .schedule__table {
