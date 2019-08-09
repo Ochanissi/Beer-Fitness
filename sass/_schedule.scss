@@ -7,7 +7,7 @@
     background-size: cover;
     color: $color-grey-light-1;
     background-attachment: fixed;
-    height: 100vh;
+    height: 200vh;
 
     &__heading {
         margin-top: 15rem;
@@ -16,6 +16,63 @@
 
     &__table {
         margin-left: 20rem;
+
+        background: $color-gradient;
+
+        max-width: 70rem;
+        padding: 5rem;
+
+        text-align: center;
+
+
+        &--details {
+            width: 50%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            padding: 3rem;
+
+            justify-content: space-around;
+
+            font-size: 2.5rem;
+
+            border-bottom: 3px solid $color-grey-light-2;
+
+
+            ul {
+                list-style: none;
+
+    
+                li {
+                    &:not(:last-child) {
+                        border-bottom: 1px solid $color-grey-light-2;
+                    }
+                }
+            }
+
+
+            &--days {
+
+            }
+
+
+            &--hours {
+
+            }
+
+        }
+
+        &--text {
+            font-size: 2.3rem;
+
+            margin-bottom: 3rem;
+        }
     }
     
 }
