@@ -221,15 +221,26 @@ body {
   background-color: aqua;
   grid-column: full-start / full-end;
   height: 100vh;
-  display: grid; }
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5rem; }
   .features__heading {
+    background-color: #3cb371;
     grid-column: center-start / col-end 4;
-    grid-row: 1 / span 2;
-    min-width: 100rem; }
-  .features__content {
+    grid-row: 1 / -1; }
+  .features__description {
+    background-color: #0000ff;
     grid-column: col-start 5 / center-end;
-    grid-row: 1 / span 2;
-    min-width: 100rem; }
+    grid-row: 1 / 2; }
+  .features__music {
+    background-color: #6a5acd;
+    grid-column: col-start 5 / col-end 6;
+    grid-row: 2 / 3; }
+  .features__whats {
+    background-color: #ee82ee;
+    grid-column: col-start 7 / center-end;
+    grid-row: 2 / 3; }
 
 .schedule {
   grid-column: full-start / full-end;
