@@ -40,6 +40,12 @@
         font-size: 4rem;
         font-weight: 700;
     }
+
+    &--feat {
+        color: $color-secondary;
+        font-size: 9rem;
+        font-weight: 900;
+    }
 }
 
 .heading-2 {
@@ -68,6 +74,7 @@
         line-height: 1rem;
         margin-bottom: 5rem;
     }
+
 }
 
 .heading-3 {
@@ -82,6 +89,13 @@
         font-weight: 700;
     }
 
+    &--feat {
+        color: $color-secondary;
+        text-transform: capitalize;
+        font-size: 8rem;
+        font-weight: 300;
+    }
+
 }
 
 .heading-4 {
@@ -94,6 +108,13 @@
 
     &--dark {
         color: $color-grey-dark-1;
+    }
+
+    &--feat {
+        color: $color-secondary;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 400;
     }
 }
 

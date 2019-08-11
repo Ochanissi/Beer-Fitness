@@ -15,8 +15,9 @@
         font-size: 2rem;
         padding: 2rem 2vw;
 
-        p {
-            margin-bottom: 5rem;
+        &--text {
+            // margin-bottom: 5rem;
+            color: $color-grey-light-1;
         }
 
 

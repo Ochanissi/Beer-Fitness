@@ -53,6 +53,10 @@ body {
     letter-spacing: .8rem;
     font-size: 4rem;
     font-weight: 700; }
+  .heading-1--feat {
+    color: yellow;
+    font-size: 9rem;
+    font-weight: 900; }
 
 .heading-2 {
   font-size: 4rem;
@@ -79,6 +83,11 @@ body {
   .heading-3--desc {
     font-size: 2.5rem;
     font-weight: 700; }
+  .heading-3--feat {
+    color: yellow;
+    text-transform: capitalize;
+    font-size: 8rem;
+    font-weight: 300; }
 
 .heading-4 {
   font-size: 1.9rem; }
@@ -86,6 +95,11 @@ body {
     color: #faf9f9; }
   .heading-4--dark {
     color: #333; }
+  .heading-4--feat {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400; }
 
 .btn {
   background-color: #eb2f64;
@@ -196,8 +210,8 @@ body {
     text-align: center;
     font-size: 2rem;
     padding: 2rem 2vw; }
-    .description__content p {
-      margin-bottom: 5rem; }
+    .description__content--text {
+      color: #faf9f9; }
   .description__pictures {
     grid-column: col-start 5 / center-end;
     display: grid;
@@ -218,13 +232,13 @@ body {
     width: 100%; }
 
 .features {
-  background-color: aqua;
+  background: linear-gradient(to bottom right, #FF6D01, #FF0183);
   grid-column: full-start / full-end;
-  height: 100vh;
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 5rem; }
+  grid-gap: 5rem;
+  padding: 10rem 0; }
   .features__heading {
     background-color: #3cb371;
     grid-column: center-start / col-end 4;
@@ -248,7 +262,8 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/back-schedule.jpg);
   background-size: cover;
   color: #faf9f9;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  margin-bottom: 20rem; }
   .schedule__heading {
     margin-top: 15rem;
     margin-left: 20rem; }
