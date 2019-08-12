@@ -113,7 +113,14 @@
     &--feat {
         color: $color-secondary;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+
+    &--music {
+        color: $color-secondary;
+        text-transform: uppercase;
+        font-size: 2rem;
         font-weight: 400;
     }
 }
@@ -125,7 +132,7 @@
     border-radius: 0;
     font-family: $font-display;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -137,6 +144,27 @@
     &:hover {
         background-color: $color-primary-dark;
     }
+
+    &--dark {
+        background-color: $color-primary-dark;
+    }
+
+    &--dark:hover {
+        background-color: $color-primary-darker;
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+        color: $color-background;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.5rem 2.3rem;
+    }
+
+    &--secondary:hover {
+        background-color: $color-secondary;
+    }
+
 }
 
 .mb-sm {

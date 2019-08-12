@@ -1,24 +1,27 @@
 .features {
+    // background-color: aqua;
     background: linear-gradient(to bottom right, #FF6D01, #FF0183);
     grid-column: full-start / full-end;
 
-    // height: 90vh;
 
     display: grid;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
-    grid-template-rows: repeat(2, 1fr);
+    // grid-template-rows: minmax(min-content, 14rem) minmax(min-content, 14rem);
+    grid-template-rows: repeat(2, min-content);
 
     grid-gap: 5rem;
 
-    // margin-bottom: 20rem;
+    margin-bottom: 15rem;
 
-    padding: 10rem 0;
+    padding: 15rem 0;
+
+    
 
     
 
 
     &__heading {
-        background-color: #3cb371;
+        // background-color: #3cb371;
 
         grid-column: center-start / col-end 4;
         grid-row: 1 / -1;
@@ -28,25 +31,62 @@
     }
 
     &__description {
-        background-color: #0000ff;
+        // background-color: #0000ff;
 
         grid-column: col-start 5 / center-end;
         grid-row: 1 / 2;
 
+        text-align: center;
+
+        &--text {
+            color: $color-grey-light-1;
+            font-size: 2rem;
+        }
+
     }
 
     &__music {
-        background-color: #6a5acd;
+        // background-color: #6a5acd;
 
         grid-column: col-start 5 / col-end 6;
         grid-row: 2 / 3;
+
+        text-align: center;
+
+        padding-bottom: 3rem;
+
+        &--icon {
+            color: $color-secondary;
+            font-size: 6rem;
+
+        }
+
+        &--text {
+            color: $color-grey-light-1;
+            font-size: 2rem;
+        }
     }
 
     &__whats {
-        background-color: #ee82ee;
+        // background-color: #ee82ee;
 
         grid-column: col-start 7 / center-end;
         grid-row: 2 / 3;
+
+        text-align: center;
+
+        padding-bottom: 3rem;
+
+        &--icon {
+            color: $color-secondary;
+            font-size: 6rem;
+
+        }
+
+        &--text {
+            color: $color-grey-light-1;
+            font-size: 2rem;
+        }
 
     }
 }
