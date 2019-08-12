@@ -18,7 +18,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 40vw min-content 40vw repeat(3, min-content);
+  grid-template-rows: 100vh 40vw repeat(6, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
     padding: 40px;
@@ -98,7 +98,12 @@ body {
   .heading-4--feat {
     color: yellow;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 400; }
+  .heading-4--music {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 2rem;
     font-weight: 400; }
 
 .btn {
@@ -108,7 +113,7 @@ body {
   border-radius: 0;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -118,6 +123,18 @@ body {
   transition: all .2s; }
   .btn:hover {
     background-color: #BA265D; }
+  .btn--dark {
+    background-color: #BA265D; }
+  .btn--dark:hover {
+    background-color: #a32453; }
+  .btn--secondary {
+    background-color: yellow;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1.5rem 2.3rem; }
+  .btn--secondary:hover {
+    background-color: yellow; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -236,25 +253,42 @@ body {
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
   grid-gap: 5rem;
-  padding: 10rem 0; }
+  margin-bottom: 15rem;
+  padding: 15rem 0; }
   .features__heading {
-    background-color: #3cb371;
     grid-column: center-start / col-end 4;
     grid-row: 1 / -1; }
   .features__description {
-    background-color: #0000ff;
     grid-column: col-start 5 / center-end;
-    grid-row: 1 / 2; }
+    grid-row: 1 / 2;
+    text-align: center; }
+    .features__description--text {
+      color: #faf9f9;
+      font-size: 2rem; }
   .features__music {
-    background-color: #6a5acd;
     grid-column: col-start 5 / col-end 6;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    text-align: center;
+    padding-bottom: 3rem; }
+    .features__music--icon {
+      color: yellow;
+      font-size: 6rem; }
+    .features__music--text {
+      color: #faf9f9;
+      font-size: 2rem; }
   .features__whats {
-    background-color: #ee82ee;
     grid-column: col-start 7 / center-end;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    text-align: center;
+    padding-bottom: 3rem; }
+    .features__whats--icon {
+      color: yellow;
+      font-size: 6rem; }
+    .features__whats--text {
+      color: #faf9f9;
+      font-size: 2rem; }
 
 .schedule {
   grid-column: full-start / full-end;
@@ -263,7 +297,7 @@ body {
   background-size: cover;
   color: #faf9f9;
   background-attachment: fixed;
-  margin-bottom: 20rem; }
+  margin-bottom: 15rem; }
   .schedule__heading {
     margin-top: 15rem;
     margin-left: 20rem; }
