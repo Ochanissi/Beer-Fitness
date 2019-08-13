@@ -1,3 +1,25 @@
 .footer {
-    background-color: $color-secondary;
+    
+    &__heading {
+        // background-color: aqua;
+
+        grid-column: center-start / center-end;
+
+        text-align: center;
+
+        margin-bottom: 15rem;
+
+        // display: flex;
+        // justify-content: center;
+        // align-content: center;
+
+        // align-items: center;
+        // justify-items: center;
+    }
+
+    &__content {
+        background-color: yellow;
+
+        grid-column: center-start / center-end;
+    }
 }
