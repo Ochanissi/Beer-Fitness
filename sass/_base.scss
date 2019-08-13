@@ -10,6 +10,7 @@ $color-background: black;
 
 $color-gradient: linear-gradient(to right,#ef5241 0%, #df2674 100%);
 $color-gradient-2: linear-gradient(to bottom right, #FF6D01, #FF0183);
+$color-gradient-3: linear-gradient(to right, #11998e, #38ef7d);
 
 $color-grey-light-1: #faf9f9;
 $color-grey-light-2: #f4f2f2;
@@ -53,7 +54,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 100vh 40vw repeat(6, min-content);
+    grid-template-rows: 100vh 40vw repeat(7, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
 
     & > * {
