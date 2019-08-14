@@ -400,6 +400,7 @@ body {
   margin-bottom: 15rem; }
 
 .footer__content {
+  background-color: yellow;
   background-color: #333;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 29, 44, 0.85)), to(rgba(16, 29, 44, 0.85))), url(../img/foot-back.jpg);
   background-image: linear-gradient(rgba(16, 29, 44, 0.85), rgba(16, 29, 44, 0.85)), url(../img/foot-back.jpg);
@@ -409,7 +410,29 @@ body {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: repeat(3, min-content);
-  grid-gap: 5rem; }
-  .footer__content--text-box--logo {
-    width: 10rem;
-    color: #fff; }
+  grid-gap: 5rem;
+  justify-content: center;
+  align-content: center; }
+  .footer__content--text-box {
+    background-color: aqua;
+    grid-column: center-start / center-end;
+    grid-row: 1 / 2; }
+    .footer__content--text-box--logo {
+      width: 10rem;
+      color: #fff; }
+  .footer__content--form {
+    background-color: red;
+    grid-column: center-start / col-end 2;
+    grid-row: 2 / 3; }
+  .footer__content--social-links {
+    background-color: green;
+    grid-column: col-start 4 / col-end 5;
+    grid-row: 2 / 3; }
+  .footer__content--map {
+    background-color: pink;
+    grid-column: col-start 7 / center-end;
+    grid-row: 2 / 3; }
+  .footer__content--copyright {
+    background-color: brown;
+    grid-column: center-start / center-end;
+    grid-row: 3 / 4; }
