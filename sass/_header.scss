@@ -7,13 +7,16 @@
     &__text-box {
         display: grid;
         align-content: center;
+        justify-content: center;
+        align-items: center;
         justify-items: center;
 
-        // height: 85vh;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+
+        height: 85vh;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
         text-align: center;
     }
 
@@ -71,7 +74,7 @@
     }
 
     &__logo {
-        width: 100px;
+        width: 10rem;
         color: #fff;
     }
 }
