@@ -18,8 +18,34 @@
     }
 
     &__content {
-        background-color: yellow;
+        // background-color: yellow;
+        background-color: $color-grey-dark-1;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(16,29,44,0.85)), to(rgba(16,29,44,0.85))),url(../img/foot-back.jpg);
+        background-image: linear-gradient(rgba(16,29,44,0.85), rgba(16,29,44,0.85)),url(../img/foot-back.jpg);
 
-        grid-column: center-start / center-end;
+        grid-column: full-start / full-end;
+
+        background-size: cover;
+        background-position: center;
+
+        display: grid;
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+        // grid-template-rows: minmax(min-content, 14rem) minmax(min-content, 14rem);
+        grid-template-rows: repeat(3, min-content);
+    
+        grid-gap: 5rem;
+    
+    
+        // padding: 15rem 0;
+
+
+        &--text-box {
+
+            &--logo {
+                width: 10rem;
+                color: #fff;
+            }
+        }
+
     }
 }
