@@ -7,7 +7,7 @@
 
         text-align: center;
 
-        margin-bottom: 15rem;
+        // margin-bottom: 15rem;
 
         // display: flex;
         // justify-content: center;
@@ -33,10 +33,15 @@
         // grid-template-rows: minmax(min-content, 14rem) minmax(min-content, 14rem);
         grid-template-rows: repeat(3, min-content);
     
-        grid-gap: 5rem;
+        grid-gap: 10rem;
 
         justify-content: center;
-        align-content: center;
+        align-content: space-between;
+
+        align-items: center;
+        justify-items: center;
+
+        padding-top: 25rem;
     
     
         // padding: 15rem 0;
@@ -48,17 +53,76 @@
             grid-column: center-start / center-end;
             grid-row: 1 / 2;
 
+
+            display: grid;
+            justify-content: center;
+            align-content: end;
+            align-items: center;
+            justify-items: center;
+
+            // margin: 10rem 0;
+
+            
+
+
+            // display: flex;
+            // justify-content: center;
+            // flex-direction: column;
+            // align-items: center;
+
             &--logo {
                 width: 10rem;
-                color: #fff;
+                color: $color-grey-light-1;
+
             }
         }
 
         &--form {
             background-color: red;
 
-            grid-column: center-start / col-end 2;
+            grid-column: center-start / col-end 3;
             grid-row: 2 / 3;
+
+            color: $color-grey-light-1;
+
+            text-align: center;
+            padding: 5rem;
+
+
+            &--heading {
+                font-size: 1.8rem;
+                letter-spacing: .2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            &--email {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-family: inherit;
+                background-color: $color-grey-dark-1;
+                padding: 1.5rem 2rem;
+                border-radius: 10px;
+                border: none;
+                border-bottom: 3px solid transparent;
+                font-weight: 700;
+
+                &--input {
+                    padding: 1.5rem 6rem 1.5rem 2rem;
+                    &::placeholder {
+                        color: $color-secondary;
+                    }
+                }
+
+                &--submit {
+                    padding: 1.5rem 4rem;
+                    color: $color-grey-dark-1;
+                    background-color: $color-secondary;
+
+                }
+
+
+            }
         }
 
 
@@ -72,7 +136,7 @@
         &--map {
             background-color: pink;
 
-            grid-column: col-start 7 / center-end;
+            grid-column: col-start 6 / center-end;
             grid-row: 2 / 3;
         }
 
@@ -81,6 +145,9 @@
             
             grid-column: center-start / center-end;
             grid-row: 3 / 4;
+
+            align-self: end;
+
         }
 
     }
