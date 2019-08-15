@@ -44,7 +44,7 @@
         font-weight: 400;
         // line-height: 1.5;
         width: fit-content;
-        color: #fff;
+        color: $color-grey-light-1;
         text-decoration: none;
         font-family: $font-display;
         text-transform: uppercase;
@@ -62,7 +62,7 @@
         display: block;
         margin-top: 5px;
         right: 0;
-        background: #FFFF00;
+        background: $color-secondary;
         transition: width .2s ease;
         -webkit-transition: width .2s ease;
     }
@@ -70,12 +70,12 @@
     &__link:hover:after{
         width: 100%;
         left: 0;
-        background: #FFFF00;
+        background: $color-secondary;
     }
 
     &__logo {
         width: 10rem;
-        color: #fff;
+        color: $color-grey-light-1;
     }
 }
 
