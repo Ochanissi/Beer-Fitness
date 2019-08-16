@@ -47,14 +47,14 @@ body {
     font-weight: 400;
     letter-spacing: 1.3rem; }
   .heading-1--desc {
-    color: yellow; }
+    color: #FBFF00; }
   .heading-1--sche {
     text-transform: uppercase;
     letter-spacing: .8rem;
     font-size: 4rem;
     font-weight: 700; }
   .heading-1--feat {
-    color: yellow;
+    color: #FBFF00;
     font-size: 9rem;
     font-weight: 900; }
   .heading-1--foot {
@@ -75,7 +75,7 @@ body {
   .heading-2--dark {
     color: #333; }
   .heading-2--sche {
-    color: yellow;
+    color: #FBFF00;
     text-transform: uppercase;
     letter-spacing: .8rem;
     font-size: 8rem;
@@ -100,7 +100,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700; }
   .heading-3--feat {
-    color: yellow;
+    color: #FBFF00;
     text-transform: capitalize;
     font-size: 8rem;
     font-weight: 300; }
@@ -118,12 +118,12 @@ body {
   .heading-4--dark {
     color: #333; }
   .heading-4--feat {
-    color: yellow;
+    color: #FBFF00;
     text-transform: uppercase;
     font-size: 4rem;
     font-weight: 400; }
   .heading-4--music {
-    color: yellow;
+    color: #FBFF00;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 400; }
@@ -150,13 +150,13 @@ body {
   .btn--dark:hover {
     background-color: #a32453; }
   .btn--secondary {
-    background-color: yellow;
+    background-color: #FBFF00;
     color: black;
     font-size: 1.2rem;
     font-weight: 700;
     padding: 1.5rem 2.3rem; }
   .btn--secondary:hover {
-    background-color: yellow; }
+    background-color: #FBFF00; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -214,13 +214,13 @@ body {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: yellow;
+    background: #FBFF00;
     transition: width .2s ease;
     -webkit-transition: width .2s ease; }
   .main-nav__link:hover:after {
     width: 100%;
     left: 0;
-    background: yellow; }
+    background: #FBFF00; }
   .main-nav__logo {
     width: 10rem;
     color: #faf9f9; }
@@ -287,7 +287,7 @@ body {
     text-align: center;
     padding-bottom: 3rem; }
     .features__music--icon {
-      color: yellow;
+      color: #FBFF00;
       font-size: 6rem; }
     .features__music--text {
       color: #faf9f9;
@@ -298,7 +298,7 @@ body {
     text-align: center;
     padding-bottom: 3rem; }
     .features__whats--icon {
-      color: yellow;
+      color: #FBFF00;
       font-size: 6rem; }
     .features__whats--text {
       color: #faf9f9;
@@ -458,22 +458,68 @@ body {
       .footer__content--form--email--input {
         padding: 1.5rem 6rem 1.5rem 2rem; }
         .footer__content--form--email--input::placeholder {
-          color: yellow; }
+          color: #FBFF00; }
       .footer__content--form--email--submit {
         padding: 1.5rem 4rem;
         color: #333;
-        background-color: yellow; }
+        background-color: #FBFF00; }
       .footer__content--form--email--checkbox-label {
         color: #999;
         font-size: 1.5rem; }
   .footer__content--social-links {
     background-color: green;
     grid-column: col-start 4 / col-end 5;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    text-align: center;
+    padding: 3rem; }
+    .footer__content--social-links--heading {
+      font-size: 1.8rem;
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #faf9f9; }
+    .footer__content--social-links--list {
+      list-style: none;
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: space-evenly;
+      grid-gap: 2rem;
+      margin-top: 2rem; }
+      .footer__content--social-links--list--link:link, .footer__content--social-links--list--link:visited {
+        border: 2px solid #faf9f9;
+        border-radius: 12px;
+        padding: 9px 9px 0px 9px;
+        color: #faf9f9;
+        text-decoration: none;
+        transition: all .2s; }
+      .footer__content--social-links--list--link:hover, .footer__content--social-links--list--link:active {
+        color: #333;
+        border-color: #FBFF00;
+        background-color: #FBFF00; }
+      .footer__content--social-links--list--icon {
+        font-size: 3rem; }
   .footer__content--map {
     background-color: pink;
     grid-column: col-start 6 / center-end;
-    grid-row: 2 / 3; }
+    grid-row: 2 / 3;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 3rem;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    grid-gap: 2rem; }
+    .footer__content--map--link:link, .footer__content--map--link:visited {
+      text-decoration: none;
+      color: #FBFF00;
+      transition: all .2s; }
+    .footer__content--map--link:hover, .footer__content--map--link:active {
+      color: #FDFF99; }
+    .footer__content--map--icon {
+      font-size: 5rem; }
   .footer__content--copyright {
     background-color: brown;
     grid-column: center-start / center-end;

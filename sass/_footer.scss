@@ -118,7 +118,6 @@
                     padding: 1.5rem 4rem;
                     color: $color-grey-dark-1;
                     background-color: $color-secondary;
-
                 }
 
                 &--checkbox-input {
@@ -138,6 +137,59 @@
 
             grid-column: col-start 4 / col-end 5;
             grid-row: 2 / 3;
+
+            text-align: center;
+            padding: 3rem;
+
+            &--heading {
+                font-size: 1.8rem;
+                letter-spacing: .2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $color-grey-light-1;
+                
+            }
+
+            &--list {
+                list-style: none;
+
+                display: grid;
+                grid-auto-flow: column;
+                justify-content: space-evenly;
+                grid-gap: 2rem;
+
+                margin-top: 2rem;
+
+
+                &--item {
+
+                }
+    
+                &--link {
+                    &:link,
+                    &:visited {
+                        border: 2px solid $color-grey-light-1;
+                        border-radius: 12px;
+                        padding: 9px 9px 0px 9px;
+
+                        color: $color-grey-light-1;
+                        text-decoration: none;
+                        transition: all .2s;
+            
+                    }
+            
+                    &:hover,
+                    &:active {
+                        color: $color-grey-dark-1;
+                        border-color: $color-secondary;
+                        background-color: $color-secondary;
+                    }
+                }
+    
+                &--icon {
+                    font-size: 3rem;
+                }
+            }
         }
 
         &--map {
@@ -145,6 +197,41 @@
 
             grid-column: col-start 6 / center-end;
             grid-row: 2 / 3;
+
+            font-size: 1.8rem;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+
+            padding: 3rem;
+
+            display: grid;
+            grid-auto-flow: row;
+            justify-content: space-evenly;
+            justify-items: center;
+            grid-gap: 2rem;
+
+            &--link {
+                &:link,
+                &:visited {
+                    text-decoration: none;
+                    color: $color-secondary;
+                    transition: all .2s;
+        
+                }
+        
+                &:hover,
+                &:active {
+                    color: $color-secondary-light;
+
+                }
+            }
+
+            &--icon {
+                font-size: 5rem;
+            }
+
+
         }
 
         &--copyright {
