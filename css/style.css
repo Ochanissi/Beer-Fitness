@@ -463,6 +463,9 @@ body {
         padding: 1.5rem 4rem;
         color: #333;
         background-color: yellow; }
+      .footer__content--form--email--checkbox-label {
+        color: #999;
+        font-size: 1.5rem; }
   .footer__content--social-links {
     background-color: green;
     grid-column: col-start 4 / col-end 5;
