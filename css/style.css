@@ -12,7 +12,7 @@ html {
 body {
   background-color: black;
   font-family: "Nunito", sans-serif;
-  color: #777;
+  color: #faf9f9;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -154,9 +154,10 @@ body {
     color: black;
     font-size: 1.2rem;
     font-weight: 700;
-    padding: 1.5rem 2.3rem; }
+    padding: 1.5rem 2.3rem;
+    transition: all .2s; }
   .btn--secondary:hover {
-    background-color: #FBFF00; }
+    background-color: #FDFF99; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -417,12 +418,11 @@ body {
   grid-template-rows: repeat(3, min-content);
   grid-gap: 10rem;
   justify-content: center;
-  align-content: space-between;
+  align-content: space-evenly;
   align-items: center;
   justify-items: center;
   padding-top: 25rem; }
   .footer__content--text-box {
-    background-color: aqua;
     grid-column: center-start / center-end;
     grid-row: 1 / 2;
     display: grid;
@@ -434,7 +434,6 @@ body {
       width: 10rem;
       color: #faf9f9; }
   .footer__content--form {
-    background-color: red;
     grid-column: center-start / col-end 3;
     grid-row: 2 / 3;
     color: #faf9f9;
@@ -453,11 +452,14 @@ body {
       padding: 1.5rem 2rem;
       border-radius: 10px;
       border: none;
-      border-bottom: 3px solid transparent;
+      border: 3px solid transparent;
       font-weight: 700; }
       .footer__content--form--email--input {
         padding: 1.5rem 6rem 1.5rem 2rem; }
         .footer__content--form--email--input::placeholder {
+          color: #FBFF00; }
+        .footer__content--form--email--input:focus {
+          border-color: #FBFF00;
           color: #FBFF00; }
       .footer__content--form--email--submit {
         padding: 1.5rem 4rem;
@@ -467,7 +469,6 @@ body {
         color: #999;
         font-size: 1.5rem; }
   .footer__content--social-links {
-    background-color: green;
     grid-column: col-start 4 / col-end 5;
     grid-row: 2 / 3;
     text-align: center;
@@ -499,7 +500,6 @@ body {
       .footer__content--social-links--list--icon {
         font-size: 3rem; }
   .footer__content--map {
-    background-color: pink;
     grid-column: col-start 6 / center-end;
     grid-row: 2 / 3;
     font-size: 1.8rem;
@@ -520,8 +520,14 @@ body {
       color: #FDFF99; }
     .footer__content--map--icon {
       font-size: 5rem; }
+    .footer__content--map--heading {
+      color: #faf9f9; }
+    .footer__content--map--secondary {
+      color: #FBFF00; }
   .footer__content--copyright {
-    background-color: brown;
     grid-column: center-start / center-end;
     grid-row: 3 / 4;
-    align-self: end; }
+    align-self: end;
+    font-size: 1.75rem; }
+    .footer__content--copyright--name {
+      color: #FBFF00; }

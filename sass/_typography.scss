@@ -190,10 +190,12 @@
         font-size: 1.2rem;
         font-weight: 700;
         padding: 1.5rem 2.3rem;
+        transition: all .2s;
+
     }
 
     &--secondary:hover {
-        background-color: $color-secondary;
+        background-color: $color-secondary-light;
     }
 
 }
