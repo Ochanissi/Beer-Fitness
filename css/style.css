@@ -18,7 +18,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 40vw repeat(4, min-content) 100vh;
+  grid-template-rows: 90vh 40vw repeat(4, min-content) 100vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
     padding: 40px;
@@ -172,8 +172,9 @@ body {
   margin-bottom: 8rem; }
 
 .header {
-  background-color: rgba(100, 100, 100, 0.9);
   grid-column: full-start / full-end;
+  background-color: rgba(100, 100, 100, 0.9);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative; }
   .header__text-box {
     display: grid;
