@@ -21,7 +21,6 @@ body {
   grid-template-rows: 90vh 40vw repeat(4, min-content) 100vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .container > * {
-    padding: 40px;
     font-size: 3rem; }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
@@ -267,11 +266,11 @@ body {
 .features {
   background: linear-gradient(to bottom right, #FF6D01, #FF0183);
   grid-column: full-start / full-end;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: repeat(2, min-content);
   grid-gap: 5rem;
-  margin-bottom: 15rem;
   padding: 15rem 0; }
   .features__heading {
     grid-column: center-start / col-end 4;
@@ -313,6 +312,7 @@ body {
   background-size: cover;
   color: #faf9f9;
   background-attachment: fixed;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   margin-bottom: 15rem; }
   .schedule__heading {
     margin-top: 15rem;
@@ -346,14 +346,13 @@ body {
       margin-bottom: 3rem; }
 
 .gallery {
-  background-color: #333;
   grid-column: full-start / full-end;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   margin-bottom: 15rem;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);
-  grid-gap: 1.5rem;
-  padding: 1.5rem; }
+  grid-gap: 1.5rem; }
   .gallery__img {
     width: 100%;
     height: 100%;
