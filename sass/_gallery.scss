@@ -1,6 +1,9 @@
 .gallery {
-    background-color: $color-grey-dark-1;
+    // background-color: $color-grey-dark-1;
     grid-column: full-start / full-end;
+
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+
 
     margin-bottom: 15rem;
 
@@ -8,7 +11,7 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 5vw);
     grid-gap: 1.5rem;
-    padding: 1.5rem;
+    // padding: 15rem 1.5rem;
 
     &__img {
         width: 100%;
