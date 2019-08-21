@@ -2,10 +2,10 @@
     // background-color: $color-grey-dark-1;
     grid-column: full-start / full-end;
 
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    // clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 
 
-    margin-bottom: 15rem;
+    // margin-bottom: 10rem;
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
