@@ -3,6 +3,38 @@
     font-weight: 400;
 }
 
+.heading {
+    &--animated {
+        &--left {
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+
+            // &--slow {
+            //     animation-delay: .5s;
+            // }
+        }
+
+        &--right {
+            animation-name: moveInRight;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        &--top {
+            animation-name: moveInTop;
+            animation: moveInTop .5s ease-out;
+            animation-fill-mode: backwards;
+        }
+
+        &--bottom {
+            animation-name: moveInBottom;
+            animation: moveInBottom .5s ease-out;
+            animation-fill-mode: backwards;
+        }
+    }
+}
+
 .heading-1 {
     @extend %heading;
     font-size: 4.5rem;
@@ -20,7 +52,6 @@
         font-weight: 700;
         letter-spacing: 2rem;
         line-height: 1.7;
-
     }
 
     &--sub {
@@ -169,6 +200,7 @@
     text-decoration: none;
     padding: 1.8rem 3rem;
     border-radius: .4rem;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
     cursor: pointer;
     transition: all .2s;
 
@@ -197,6 +229,13 @@
     &--secondary:hover {
         background-color: $color-secondary-light;
     }
+
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+        /* animation-delay: .75s; */
+    }
+
 
 }
 
