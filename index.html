@@ -12,16 +12,16 @@
         <title>Beer Fitness &mdash; Always Cold!</title>
     </head>
     <body class="container">
-        <header class="header">
+        <header class="header js--section-header">
             <nav class="header__nav">
                 <ul class="main-nav">
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">About us</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Music</a></li>
-                    <img src="img/logo-white.png" alt="Logo" class="main-nav__logo" srcset="">
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Hire</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Whats on</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Contact us</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link js--scroll-to-header">Home</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link js--scroll-to-description">About us</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link js--scroll-to-gallery">Gallery</a></li>
+                    <li class="main-nav__item--logo"><a href="#" class="main-nav__link--logo js--scroll-to-header"><img src="img/logo-white.png" alt="Logo" class="main-nav__logo" srcset=""></a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link js--scroll-to-schedule">Schedule</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link js--scroll-to-features">Whats on</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link js--scroll-to-footer">Contact us</a></li>
                 </ul>
             </nav>
             <div class="header__text-box js--header__text-box">
@@ -29,7 +29,7 @@
                     <span class="heading-1--main heading--animated--left">Beer Fitness</span>
                     <span class="heading-1--sub heading--animated--right">is where fun happens</span>
                 </h1>
-                <a class="btn btn--animated" href="#">Show me more</a>
+                <a class="btn btn--animated js--scroll-to-description" href="#">Show me more</a>
             </div>
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
@@ -40,12 +40,12 @@
             </div>
         </header>
 
-        <div class="description__content">
+        <div class="description__content js--section-description">
             <h3 class="heading-1 heading-1--desc heading--animated--left mb-sm">Beer Fitness</h3>
             <h2 class="heading-3 heading-3--desc mb-md">&ldquo;Bucharest's no.1 bar&ldquo;</h2>
             <p class="description__content--text mb-lg">Beer Fitness is a bar and event space in the heart of the Old Town, Bucharest. Open 7 days a week.</br></br>
             Beer Fitness, The Basement, Piata Sf. Gheorghe (entrance on left hise of the church), Bucharest</p>
-            <a class="btn btn--animated" href="#">Show on map</a>
+            <a class="btn btn--animated js--scroll-to-footer" href="#">Show on map</a>
         </div>
 
         <div class="description__pictures">
@@ -55,7 +55,7 @@
             <img src="img/desc-4.jpg" alt="Description photo" class="description__img description__img--4">
         </div>
 
-        <div class="schedule">
+        <div class="schedule js--section-schedule">
             <div class="schedule__heading heading--animated--left">
                 <span class="heading-1--main heading-1--sche">your serve</span>
                 <span class="heading-2--sub heading-2--sche">or mine?</span>
@@ -89,11 +89,11 @@
                     Please note our venue is strictly over 18’s only at all times! </br>
                     For private hire of our venue get in touch with us today.
                 </p>
-                <a class="btn btn--dark" href="#">Contact us</a>
+                <a class="btn btn--dark js--scroll-to-footer" href="#">Contact us</a>
             </div>
         </div>
 
-        <div class="features">
+        <div class="features js--section-features">
             <div class="features__heading heading--animated--left">
                 <h2 class="heading-3 heading-3--feat">Booze &</h3>
                 <h3 class="heading-1 heading-1--feat">good<br>music</h2>
@@ -107,17 +107,17 @@
                 <ion-icon name="musical-notes" class="features__music--icon"></ion-icon>
                 <h4 class="heading-4 heading-4--music mb-sm">Good music</h4>
                 <p class="features__music--text mb-sm">The music is on the house.</br>No booking is necessary,</br>just show up.</p>
-                <a class="btn btn--secondary" href="#">Learn more</a>
+                <a class="btn btn--secondary js--scroll-to-gallery" href="#">Learn more</a>
             </div>
             <div class="features__whats">
                 <ion-icon name="trending-up" class="features__music--icon"></ion-icon>
                 <h4 class="heading-4 heading-4--music mb-sm">whats on</h4>
                 <p class="features__music--text mb-sm">Check out our latest events here. From beat the bar tender to cheap prosecco on Wednesdays. We have it all.</p>
-                <a class="btn btn--secondary" href="#">Learn more</a>
+                <a class="btn btn--secondary js--scroll-to-gallery" href="#">Learn more</a>
             </div>
         </div>
 
-        <section class="gallery">
+        <section class="gallery js--section-gallery">
             <figure class="gallery__item gallery__item--1">
                 <img src="img/gal-1.jpg" alt="Gallery image 1" class="gallery__img">
             </figure>
@@ -169,9 +169,10 @@
             </h1>
         </div>
 
-        <footer class="footer__content">
+        <footer class="footer__content js--section-footer">
             <div class="footer__content--text-box">
-                <img src="img/logo-white.png" alt="Logo" class="footer__content--text-box--logo" srcset="">
+                <a href="#" class="main-nav__link--logo js--scroll-to-header"><img src="img/logo-white.png" alt="Logo" class="footer__content--text-box--logo" srcset="" srcset=""></a>
+                <!-- <img src="img/logo-white.png" alt="Logo" class="footer__content--text-box--logo" srcset=""> -->
                 <h1 class="heading-1--main heading-3--foot">Beer Fitness</h1>
             </div>
 

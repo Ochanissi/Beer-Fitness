@@ -83,6 +83,16 @@
         width: 10rem;
         color: $color-grey-light-1;
     }
+
+    &__link--logo:link,
+    &__link--logo:visited {
+
+        width: 10rem;
+        height: 8.7rem;
+        display: block;
+        text-align: center;
+        // transition: all .2s;
+    }
 }
 
 // Sticky Navi
@@ -100,7 +110,13 @@
 
     .main-nav__logo {
         width: 7rem;
+    }
 
+    .main-nav__link--logo:link,
+    .main-nav__link--logo:visited {
+
+        width: 7rem;
+        height: 6.1rem;
     }
 
 }

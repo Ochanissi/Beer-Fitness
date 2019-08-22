@@ -286,6 +286,11 @@ body {
   .main-nav__logo {
     width: 10rem;
     color: #faf9f9; }
+  .main-nav__link--logo:link, .main-nav__link--logo:visited {
+    width: 10rem;
+    height: 8.7rem;
+    display: block;
+    text-align: center; }
 
 .sticky {
   position: fixed;
@@ -297,6 +302,10 @@ body {
   z-index: 9999; }
   .sticky .main-nav__logo {
     width: 7rem; }
+  .sticky .main-nav__link--logo:link,
+  .sticky .main-nav__link--logo:visited {
+    width: 7rem;
+    height: 6.1rem; }
 
 .bg-video {
   position: absolute;
@@ -345,7 +354,6 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   grid-template-rows: repeat(2, min-content);
   grid-gap: 5rem;
-  margin-bottom: 20rem;
   padding: 30rem 0 10rem 0; }
   .features__heading {
     grid-column: center-start / col-end 4;
@@ -420,6 +428,7 @@ body {
 
 .gallery {
   grid-column: full-start / full-end;
+  padding-top: 20rem;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 5vw);
@@ -501,7 +510,8 @@ body {
     justify-content: center;
     align-content: end;
     align-items: center;
-    justify-items: center; }
+    justify-items: center;
+    grid-gap: 2rem; }
     .footer__content--text-box--logo {
       width: 10rem;
       color: #faf9f9; }
