@@ -286,6 +286,17 @@ body {
     width: 10rem;
     color: #faf9f9; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: aqua;
+  opacity: .80;
+  box-shadow: 0 2px 2px #333; }
+  .sticky .main-nav__logo {
+    width: 7rem; }
+
 .bg-video {
   position: absolute;
   top: 0;
