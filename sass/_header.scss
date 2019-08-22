@@ -2,7 +2,6 @@
     grid-column: full-start / full-end;
     // background-color: rgba(100, 100, 100, 0.9);
    
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     
     position: relative;
@@ -15,7 +14,7 @@
         justify-items: center;
 
 
-        height: 85vh;
+        height: 75vh;
         // position: absolute;
         // top: 50%;
         // left: 50%;
@@ -25,6 +24,8 @@
 
 }
 
+// Main Nav
+
 .main-nav {
     list-style: none;
     
@@ -33,6 +34,8 @@
     // grid-gap: 1rem;
     align-items: center;
     justify-items: center;
+    justify-content: center;
+    align-content: center;
 
     max-width: 100rem;
     margin: 0 auto 0;
@@ -82,6 +85,26 @@
     }
 }
 
+// Sticky Navi
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color: $color-background, $alpha: .75);
+    // background-color: aqua;
+    // opacity: .75;
+    box-shadow: 0 2px 2px $color-grey-dark-1;
+    z-index: 9999;
+
+    .main-nav__logo {
+        width: 7rem;
+
+    }
+
+}
+
 .bg-video {
     position: absolute;
     top: 0;
@@ -97,5 +120,8 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
+
 }
