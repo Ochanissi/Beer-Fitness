@@ -10,7 +10,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: black;
+  background-color: #000000;
   font-family: "Nunito", sans-serif;
   color: #faf9f9;
   font-weight: 300;
@@ -171,7 +171,7 @@ body {
     background-color: #a32453; }
   .btn--secondary {
     background-color: #FBFF00;
-    color: black;
+    color: #000000;
     font-size: 1.2rem;
     font-weight: 700;
     padding: 1.5rem 2.3rem;
@@ -233,7 +233,6 @@ body {
 
 .header {
   grid-column: full-start / full-end;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   position: relative; }
   .header__text-box {
     display: grid;
@@ -241,7 +240,7 @@ body {
     justify-content: center;
     align-items: center;
     justify-items: center;
-    height: 85vh;
+    height: 75vh;
     text-align: center; }
 
 .main-nav {
@@ -250,6 +249,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   align-items: center;
   justify-items: center;
+  justify-content: center;
+  align-content: center;
   max-width: 100rem;
   margin: 0 auto 0; }
   .main-nav__item {
@@ -291,9 +292,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: aqua;
-  opacity: .80;
-  box-shadow: 0 2px 2px #333; }
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: 0 2px 2px #333;
+  z-index: 9999; }
   .sticky .main-nav__logo {
     width: 7rem; }
 
@@ -309,7 +310,8 @@ body {
   .bg-video__content {
     height: 100%;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
 
 .description__content {
   grid-column: center-start / col-end 4;

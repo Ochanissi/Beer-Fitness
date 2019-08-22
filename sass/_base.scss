@@ -7,7 +7,7 @@ $color-primary-darker: #a32453;
 $color-secondary: #FBFF00;
 $color-secondary-light: #FDFF99;
 
-$color-background: black;
+$color-background: #000000;
 
 $color-gradient: linear-gradient(to right,#ef5241 0%, #df2674 100%);
 $color-gradient-2: linear-gradient(to bottom right, #FF6D01, #FF0183);
@@ -42,6 +42,7 @@ $font-display: 'Josefin Sans', sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+    
 }
 
 body {
@@ -50,6 +51,7 @@ body {
     color: $color-grey-light-1;
     font-weight: 300;
     line-height: 1.6;
+    
 
 }
 
@@ -62,4 +64,5 @@ body {
         // padding: 40px;
         font-size: 3rem;
     }
+
 }
