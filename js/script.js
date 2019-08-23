@@ -32,10 +32,6 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: $('.js--section-footer').offset().top}, 1000); 
      });
 
-     $('.js--scroll-to-footer').click(function () {
-        $('html, body').animate({scrollTop: $('.js--section-footer').offset().top}, 1000); 
-     });
-
      $('.js--scroll-to-gallery').click(function () {
         $('html, body').animate({scrollTop: $('.js--section-gallery').offset().top}, 1000); 
      });
@@ -82,9 +78,9 @@ $(document).ready(function() {
 
     // Animation on scroll
     $('.js--wp-1').waypoint(function(direction) {
-        $('.js--wp-1').addClass('animated fadeIn');
+        $('.js--wp-1').addClass('heading--animated--left');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
     
     $('.js--wp-2').waypoint(function(direction) {
