@@ -51,3 +51,43 @@
         transform: translate(0);
     }
 }
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3,
+.js--wp-4,
+.js--wp-5,
+.js--wp-6,
+.js--wp-7 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.heading--animated--left {
+    opacity: 1;
+}
+
+.js--wp-2.btn--animated {
+    opacity: 1;
+}
+
+.js--wp-3.heading--animated--left {
+    opacity: 1;
+}
+
+.js--wp-4.heading--animated--left {
+    opacity: 1;
+}
+
+.js--wp-5.heading--animated--top {
+    opacity: 1;
+}
+
+.js--wp-6.heading--animated--bottom {
+    opacity: 1;
+}
+
+.js--wp-7.heading--animated--top {
+    opacity: 1;
+}
