@@ -83,22 +83,40 @@ $(document).ready(function() {
         offset: '80%'
     });
     
-    $('.js--wp-2').waypoint(function(direction) {
-        $('.js--wp-2').addClass('animated fadeInUp');
+    $('.js--wp-1').waypoint(function(direction) {
+        $('.js--wp-2').addClass('btn--animated');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
-    
+
     $('.js--wp-3').waypoint(function(direction) {
-        $('.js--wp-3').addClass('animated fadeIn');
+        $('.js--wp-3').addClass('heading--animated--left');
     }, {
-        offset: '50%'
+        offset: '80%'
     });
-    
+
     $('.js--wp-4').waypoint(function(direction) {
-        $('.js--wp-4').addClass('animated pulse');
+        $('.js--wp-4').addClass('heading--animated--left');
     }, {
-        offset: '50%'
+        offset: '80%'
+    });
+
+    $('.js--wp-5').waypoint(function(direction) {
+        $('.js--wp-5').addClass('heading--animated--top');
+    }, {
+        offset: '80%'
+    });
+
+    $('.js--wp-5').waypoint(function(direction) {
+        $('.js--wp-6').addClass('heading--animated--bottom');
+    }, {
+        offset: '80%'
+    });
+
+    $('.js--wp-7').waypoint(function(direction) {
+        $('.js--wp-7').addClass('heading--animated--top');
+    }, {
+        offset: '80%'
     });
 
     // Mobile navigation
