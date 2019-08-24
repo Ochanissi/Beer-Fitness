@@ -39,8 +39,6 @@
 
         @media only screen and (max-width: $bp-medium) {
             grid-column: center-start / center-end;
-
-            margin-top: 30rem;
         }
     }
 
@@ -54,6 +52,7 @@
         align-content: center;
         align-items: center;
         justify-content: center;
+        justify-items: center;
 
         grid-gap: 4rem;
         padding: 20rem 3vw;
@@ -79,10 +78,15 @@
         @media only screen and (max-width: $bp-medium) {
             grid-column: center-start / center-end;
             grid-template-rows: auto;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(30vw, 2fr));
 
             margin-top: 30rem;
             padding: 0;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 45rem;
+
         }
     }
 

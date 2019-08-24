@@ -11,6 +11,9 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
 
 body {
   background-color: #000000;
@@ -66,11 +69,17 @@ body {
     font-weight: 700;
     letter-spacing: 2rem;
     line-height: 1.7; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-1--main {
+        letter-spacing: 1.2rem; } }
   .heading-1--sub {
     display: block;
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: 1.3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-1--sub {
+        letter-spacing: .8rem; } }
   .heading-1--desc {
     color: #FBFF00; }
   .heading-1--sche {
@@ -278,6 +287,7 @@ body {
     justify-content: center;
     align-items: center;
     justify-items: center;
+    margin: 0 auto;
     height: 75vh;
     text-align: center; }
 
@@ -303,6 +313,10 @@ body {
   @media only screen and (max-width: 62.5em) {
     .main-nav {
       max-width: 80rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .main-nav {
+      max-width: 30rem;
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr)); } }
   .main-nav__item {
     width: fit-content; }
   .main-nav__link:link, .main-nav__link:visited {
@@ -399,8 +413,7 @@ body {
       padding: 5rem .75vw; } }
   @media only screen and (max-width: 50em) {
     .description__content {
-      grid-column: center-start / center-end;
-      margin-top: 30rem; } }
+      grid-column: center-start / center-end; } }
 
 .description__pictures {
   grid-column: col-start 5 / center-end;
@@ -410,6 +423,7 @@ body {
   align-content: center;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   grid-gap: 4rem;
   padding: 20rem 3vw; }
   @media only screen and (max-width: 106.25em) {
@@ -430,9 +444,12 @@ body {
     .description__pictures {
       grid-column: center-start / center-end;
       grid-template-rows: auto;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(30vw, 2fr));
       margin-top: 30rem;
       padding: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .description__pictures {
+      margin-top: 45rem; } }
 
 .description__img {
   max-width: 100%; }
@@ -518,6 +535,9 @@ body {
   @media only screen and (max-width: 75em) {
     .schedule {
       margin-top: 20rem; } }
+  @media only screen and (max-width: 50em) {
+    .schedule {
+      margin-top: 10rem; } }
   .schedule__heading {
     margin-left: 20rem; }
     @media only screen and (max-width: 62.5em) {
@@ -532,7 +552,13 @@ body {
     text-align: center; }
     @media only screen and (max-width: 62.5em) {
       .schedule__table {
-        margin: 0 auto; } }
+        margin: 0 auto;
+        max-width: 60rem;
+        padding: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .schedule__table {
+        max-width: 50rem;
+        padding: 3rem 1.5rem; } }
     .schedule__table--details {
       width: 50%;
       display: flex;

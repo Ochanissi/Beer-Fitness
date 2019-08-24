@@ -27,6 +27,10 @@
         margin-top: 20rem;
     }
 
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 10rem;
+    }
+
 
     &__heading {
         // margin-top: 35rem;
@@ -41,9 +45,7 @@
     &__table {
         margin-left: 20rem;
 
-        @media only screen and (max-width: $bp-large) {
-            margin: 0 auto;
-        }
+
 
 
         background: $color-gradient;
@@ -55,6 +57,17 @@
 
         // margin-bottom: 35rem;
 
+        @media only screen and (max-width: $bp-large) {
+            margin: 0 auto;
+            max-width: 60rem;
+            padding: 3rem;
+
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            max-width: 50rem;
+            padding: 3rem 1.5rem;
+        }
 
         &--details {
             width: 50%;

@@ -37,6 +37,8 @@ $bp-largest-2: 87.5em; // 1400/16 = 87.5em
 $bp-largest: 75em; // 1200px/16 = 75em
 $bp-large: 62.5em; // 1000px/16 = 62.5em
 $bp-medium: 50em; // 800px/16 = 50em
+$bp-small: 37.5em; // 600px/16 = 37.5em
+
 
 *,
 *::before,
@@ -52,6 +54,10 @@ html {
     
     @media only screen and (max-width: $bp-largest) {
         font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 40%;
     }
 }
 
