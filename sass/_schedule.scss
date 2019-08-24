@@ -27,13 +27,23 @@
         margin-top: 20rem;
     }
 
+
     &__heading {
         // margin-top: 35rem;
         margin-left: 20rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     &__table {
         margin-left: 20rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin: 0 auto;
+        }
 
 
         background: $color-gradient;
