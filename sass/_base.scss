@@ -31,6 +31,11 @@ $line: 1px solid var(--color-grey-light-2);
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest-3: 106.25rem; // 1600/16 = 106.25rem
+$bp-largest-2: 87.5rem; // 1400/16 = 87.5rem
+$bp-largest: 75rem; // 1200px/16 = 75rem
+
 *,
 *::before,
 *::after {

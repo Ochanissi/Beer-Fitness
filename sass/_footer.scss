@@ -36,12 +36,12 @@
         grid-gap: 10rem;
 
         justify-content: center;
-        align-content: space-evenly;
+        align-content: end;
 
         align-items: center;
         justify-items: center;
 
-        padding-top: 25rem;
+        padding-bottom: 3rem;
     
     
         // padding: 15rem 0;
@@ -63,8 +63,13 @@
 
             // margin: 10rem 0;
 
-            
+            align-self: center;
 
+            margin-bottom: 10rem;
+            
+            @media only screen and (max-width: $bp-largest) {
+                margin-bottom: 5rem;
+            }
 
             // display: flex;
             // justify-content: center;
@@ -97,6 +102,11 @@
                 font-weight: 700;
             }
 
+            &--news {
+                display: block;
+            }
+
+
 
             &--email {
                 font-size: 1.5rem;
@@ -126,6 +136,7 @@
                     color: $color-grey-dark-1;
                     background-color: $color-secondary;
                     cursor: pointer;
+                    margin-top: 1rem;
                 }
 
                 &--checkbox-input {
@@ -218,6 +229,7 @@
             justify-content: space-evenly;
             justify-items: center;
             grid-gap: 2rem;
+            text-align: center;
 
             &--link {
                 &:link,

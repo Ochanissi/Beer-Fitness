@@ -364,6 +364,15 @@ body {
   padding: 2rem 2vw; }
   .description__content--text {
     color: #faf9f9; }
+  @media only screen and (max-width: 106.25rem) {
+    .description__content {
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 87.5rem) {
+    .description__content {
+      margin-top: 15rem; } }
+  @media only screen and (max-width: 75rem) {
+    .description__content {
+      margin-top: 20rem; } }
 
 .description__pictures {
   grid-column: col-start 5 / center-end;
@@ -374,6 +383,15 @@ body {
   justify-content: center;
   grid-gap: 4rem;
   padding: 20rem 3vw; }
+  @media only screen and (max-width: 106.25rem) {
+    .description__pictures {
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 87.5rem) {
+    .description__pictures {
+      margin-top: 15rem; } }
+  @media only screen and (max-width: 75rem) {
+    .description__pictures {
+      margin-top: 20rem; } }
 
 .description__img {
   max-width: 100%; }
@@ -429,6 +447,15 @@ body {
   background-attachment: fixed;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   padding: 30rem 0; }
+  @media only screen and (max-width: 106.25rem) {
+    .schedule {
+      margin-top: 10rem; } }
+  @media only screen and (max-width: 87.5rem) {
+    .schedule {
+      margin-top: 15rem; } }
+  @media only screen and (max-width: 75rem) {
+    .schedule {
+      margin-top: 20rem; } }
   .schedule__heading {
     margin-left: 20rem; }
   .schedule__table {
@@ -531,10 +558,10 @@ body {
   grid-template-rows: repeat(3, min-content);
   grid-gap: 10rem;
   justify-content: center;
-  align-content: space-evenly;
+  align-content: end;
   align-items: center;
   justify-items: center;
-  padding-top: 25rem; }
+  padding-bottom: 3rem; }
   .footer__content--text-box {
     grid-column: center-start / center-end;
     grid-row: 1 / 2;
@@ -543,7 +570,12 @@ body {
     align-content: end;
     align-items: center;
     justify-items: center;
-    grid-gap: 2rem; }
+    grid-gap: 2rem;
+    align-self: center;
+    margin-bottom: 10rem; }
+    @media only screen and (max-width: 75rem) {
+      .footer__content--text-box {
+        margin-bottom: 5rem; } }
     .footer__content--text-box--logo {
       width: 10rem;
       color: #faf9f9; }
@@ -558,6 +590,8 @@ body {
       letter-spacing: .2rem;
       text-transform: uppercase;
       font-weight: 700; }
+    .footer__content--form--news {
+      display: block; }
     .footer__content--form--email {
       font-size: 1.5rem;
       text-transform: uppercase;
@@ -579,7 +613,8 @@ body {
         padding: 1.5rem 4rem;
         color: #333;
         background-color: #FBFF00;
-        cursor: pointer; }
+        cursor: pointer;
+        margin-top: 1rem; }
       .footer__content--form--email--checkbox-label {
         color: #999;
         font-size: 1.5rem; }
@@ -626,7 +661,8 @@ body {
     grid-auto-flow: row;
     justify-content: space-evenly;
     justify-items: center;
-    grid-gap: 2rem; }
+    grid-gap: 2rem;
+    text-align: center; }
     .footer__content--map--link:link, .footer__content--map--link:visited {
       text-decoration: none;
       color: #FBFF00;

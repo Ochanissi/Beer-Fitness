@@ -18,7 +18,17 @@
             color: $color-grey-light-1;
         }
 
+        @media only screen and (max-width: $bp-largest-3) {
+            margin-top: 10rem;
+        }
 
+        @media only screen and (max-width: $bp-largest-2) {
+            margin-top: 15rem;
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+            margin-top: 20rem;
+        }
     }
 
     &__pictures {
@@ -34,7 +44,17 @@
         grid-gap: 4rem;
         padding: 20rem 3vw;
         
+        @media only screen and (max-width: $bp-largest-3) {
+            margin-top: 10rem;
+        }
 
+        @media only screen and (max-width: $bp-largest-2) {
+            margin-top: 15rem;
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+            margin-top: 20rem;
+        }
     }
 
     &__img {
