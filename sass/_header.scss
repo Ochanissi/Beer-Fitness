@@ -30,15 +30,31 @@
     list-style: none;
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
     // grid-gap: 1rem;
     align-items: center;
     justify-items: center;
     justify-content: center;
     align-content: center;
 
-    max-width: 100rem;
+    max-width: 120rem;
     margin: 0 auto 0;
+
+    @media only screen and (max-width: $bp-largest-3) {
+        max-width: 110rem;
+    }
+
+    @media only screen and (max-width: $bp-largest-2) {
+        max-width: 100rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+        max-width: 90rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        max-width: 80rem;
+    }
 
     &__item {
         width: fit-content;

@@ -16,7 +16,12 @@
 
     padding: 30rem 0 10rem 0;
 
-    
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: repeat(3, min-content);
+
+        padding: 20rem 0 10rem 0;
+
+    }
 
     
 
@@ -29,6 +34,12 @@
 
         // padding: 10rem;
         
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: center-start / center-end;
+            grid-row: 1 / 2;
+
+            text-align: center;
+        }
 
     }
 
@@ -40,10 +51,16 @@
 
         text-align: center;
 
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: center-start / center-end;
+            grid-row: 2 / 3;
+        }
+
         &--text {
             color: $color-grey-light-1;
             font-size: 2rem;
         }
+        
 
     }
 
@@ -56,6 +73,11 @@
         text-align: center;
 
         padding-bottom: 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: center-start / col-end 4;
+            grid-row: 3 / 4;
+        }
 
         &--icon {
             color: $color-secondary;
@@ -78,6 +100,11 @@
         text-align: center;
 
         padding-bottom: 3rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: col-start 5 / center-end;
+            grid-row: 3 / 4;
+        }
 
         &--icon {
             color: $color-secondary;

@@ -32,9 +32,11 @@ $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
 // RESPONSIVE BREAKPOINTS
-$bp-largest-3: 106.25rem; // 1600/16 = 106.25rem
-$bp-largest-2: 87.5rem; // 1400/16 = 87.5rem
-$bp-largest: 75rem; // 1200px/16 = 75rem
+$bp-largest-3: 106.25em; // 1600/16 = 106.25em
+$bp-largest-2: 87.5em; // 1400/16 = 87.5em
+$bp-largest: 75em; // 1200px/16 = 75em
+$bp-large: 62.5em; // 1000px/16 = 62.5em
+$bp-medium: 50em; // 800px/16 = 50em
 
 *,
 *::before,
@@ -48,6 +50,9 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
     
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -68,6 +73,10 @@ body {
     & > * {
         // padding: 40px;
         font-size: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-rows: 90vh 40vw repeat(5, min-content) 100vh;
     }
 
 }
