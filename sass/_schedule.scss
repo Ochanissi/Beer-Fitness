@@ -15,6 +15,18 @@
 
     // margin-bottom: 10rem;
 
+    @media only screen and (max-width: $bp-largest-3) {
+        margin-top: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-largest-2) {
+        margin-top: 15rem;
+    }
+
+    @media only screen and (max-width: $bp-largest) {
+        margin-top: 20rem;
+    }
+
     &__heading {
         // margin-top: 35rem;
         margin-left: 20rem;
