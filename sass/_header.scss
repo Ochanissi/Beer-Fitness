@@ -13,6 +13,8 @@
         align-items: center;
         justify-items: center;
 
+        margin: 0 auto;
+
 
         height: 75vh;
         // position: absolute;
@@ -20,6 +22,8 @@
         // left: 50%;
         // transform: translate(-50%, -50%);
         text-align: center;
+
+        
     }
 
 }
@@ -54,6 +58,11 @@
 
     @media only screen and (max-width: $bp-large) {
         max-width: 80rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        max-width: 30rem;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     }
 
     &__item {
