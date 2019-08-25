@@ -33,7 +33,7 @@
         // grid-template-rows: minmax(min-content, 14rem) minmax(min-content, 14rem);
         grid-template-rows: repeat(3, min-content);
     
-        grid-gap: 10rem;
+        grid-gap: 10rem 5rem;
 
         justify-content: center;
         align-content: end;

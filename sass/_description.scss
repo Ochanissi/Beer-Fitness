@@ -86,12 +86,22 @@
 
         @media only screen and (max-width: $bp-small) {
             margin-top: 45rem;
+        }
 
+        @media only screen and (max-width: $bp-smallest) {
+            grid-template-columns: repeat(auto-fit, minmax(45vw, 1fr));
+            grid-row-gap: 6rem;
+            
         }
     }
 
     &__img {
         max-width: 100%;
+
+        @media only screen and (max-width: $bp-smallest) {
+        max-width: 75%;
+            
+        }
         // height: 100%;
         // object-fit: cover;
         // display: block;

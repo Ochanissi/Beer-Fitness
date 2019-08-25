@@ -61,8 +61,6 @@
     }
 
     @media only screen and (max-width: $bp-small) {
-        max-width: 30rem;
-        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
     }
 
     &__item {
