@@ -55,6 +55,7 @@
 
         @media only screen and (max-width: $bp-small) {
             letter-spacing: 1.2rem;
+            font-size: 4rem;
     
         }
     }
@@ -67,6 +68,7 @@
 
         @media only screen and (max-width: $bp-small) {
             letter-spacing: .8rem;
+            font-size: 2rem;
     
         }
     }
@@ -97,6 +99,11 @@
         font-weight: 900;
         letter-spacing: .8rem;
         font-size: 5rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            letter-spacing: .5rem;
+            font-size: 3rem;
+        }
     }
 }
 
@@ -137,6 +144,9 @@
         letter-spacing: .5rem;
         font-size: 2rem;
 
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 1rem;
+        }
     }
 }
 

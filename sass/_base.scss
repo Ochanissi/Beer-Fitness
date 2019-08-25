@@ -38,6 +38,7 @@ $bp-largest: 75em; // 1200px/16 = 75em
 $bp-large: 62.5em; // 1000px/16 = 62.5em
 $bp-medium: 50em; // 800px/16 = 50em
 $bp-small: 37.5em; // 600px/16 = 37.5em
+$bp-smallest: 28.12em; // 4500px/16 = 28.12em
 
 
 *,
@@ -83,6 +84,10 @@ body {
 
     @media only screen and (max-width: $bp-medium) {
         grid-template-rows: 90vh 40vw repeat(5, min-content) 100vh;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(1fr, 14rem) [col-end] ) [center-end] minmax(2rem, 1fr) [full-end];
     }
 
 }
