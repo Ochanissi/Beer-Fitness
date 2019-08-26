@@ -31,6 +31,14 @@
         margin-top: 10rem;
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 30rem 3rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin-top: 5rem;
+    }
+
 
     &__heading {
         // margin-top: 35rem;
@@ -68,6 +76,8 @@
             max-width: 50rem;
             padding: 3rem 2rem;
         }
+
+        
 
         &--details {
             width: 50%;

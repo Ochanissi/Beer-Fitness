@@ -9,6 +9,7 @@
     padding-top: 20rem;
 
 
+
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 5vw);
@@ -16,6 +17,10 @@
     // padding: 15rem 1.5rem;
 
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding-top: 10rem;
+    }
 
     &__img {
         width: 100%;
