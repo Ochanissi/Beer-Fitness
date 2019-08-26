@@ -80,10 +80,7 @@ body {
 
     @media only screen and (max-width: $bp-medium) {
         grid-template-rows: 90vh 40vw repeat(5, min-content) 100vh;
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-        grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(1fr, 14rem) [col-end] ) [center-end] minmax(2rem, 1fr) [full-end];
+        grid-template-rows: 90vh 40vw repeat(6, min-content);
     }
 
 }

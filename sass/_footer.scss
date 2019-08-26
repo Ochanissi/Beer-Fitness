@@ -7,7 +7,7 @@
 
         text-align: center;
 
-        margin: 10rem 0 4rem 0;
+        margin: 10rem 0;
 
         // display: flex;
         // justify-content: center;
@@ -15,6 +15,14 @@
 
         // align-items: center;
         // justify-items: center;
+
+        @media only screen and (max-width: $bp-small) {
+            margin: 7.5rem 0;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin: 5rem 0;
+        }
     }
 
     &__content {
@@ -45,7 +53,12 @@
 
         @media only screen and (max-width: $bp-medium) {
             grid-template-rows: repeat(4, min-content);
+            padding-top: 10rem;
 
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-template-rows: repeat(5, min-content);
         }
     
     
@@ -197,6 +210,11 @@
     
             }
 
+            @media only screen and (max-width: $bp-small) {
+                grid-column: center-start / center-end;
+                grid-row: 4 / 5;
+            }
+
             &--heading {
                 font-size: 1.8rem;
                 letter-spacing: .2rem;
@@ -279,6 +297,11 @@
     
             }
 
+            @media only screen and (max-width: $bp-small) {
+                grid-column: center-start / center-end;
+                grid-row: 3 / 4;
+            }
+
             &--link {
                 &:link,
                 &:visited {
@@ -320,14 +343,30 @@
 
             font-size: 1.75rem;
 
+            text-align: center;
+
+
+
+            
             @media only screen and (max-width: $bp-medium) {
                 grid-column: center-start / center-end;
                 grid-row: 4 / 5;
     
             }
 
+            @media only screen and (max-width: $bp-small) {
+                grid-column: center-start / center-end;
+                grid-row: 5 / 6;
+            }
+
             &--name {
                 color: $color-secondary;
+            }
+
+            &--rights {
+                @media only screen and (max-width: $bp-smallest) {
+                    display: block;
+                }
             }
 
             &--link:link,
