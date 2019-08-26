@@ -23,6 +23,19 @@
 
     }
 
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: repeat(4, min-content);
+
+        padding: 20rem 0 5rem 0;
+        grid-gap: 5rem 0;
+
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 25rem 0 5rem 0;
+
+    }
+
 
     &__heading {
         // background-color: #3cb371;
@@ -77,6 +90,11 @@
             grid-row: 3 / 4;
         }
 
+        @media only screen and (max-width: $bp-small) {
+            grid-column: center-start / center-end;
+            grid-row: 3 / 4;
+        }
+
         &--icon {
             color: $color-secondary;
             font-size: 6rem;
@@ -102,6 +120,11 @@
         @media only screen and (max-width: $bp-medium) {
             grid-column: col-start 5 / center-end;
             grid-row: 3 / 4;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            grid-column: center-start / center-end;
+            grid-row: 4 / 5;
         }
 
         &--icon {

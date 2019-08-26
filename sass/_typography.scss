@@ -58,6 +58,11 @@
             font-size: 4rem;
     
         }
+
+        @media only screen and (max-width: $bp-smallest) {
+            letter-spacing: .8rem;
+            font-size: 3rem;
+        }
     }
 
     &--sub {
@@ -70,6 +75,11 @@
             letter-spacing: .8rem;
             font-size: 2rem;
     
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            letter-spacing: .5rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -92,6 +102,10 @@
         color: $color-secondary;
         font-size: 9rem;
         font-weight: 900;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 7rem;
+        }
     }
 
     &--foot {
@@ -163,7 +177,7 @@
         }
 
         @media only screen and (max-width: $bp-smallest) {
-            font-size: 1rem;
+            font-size: .75rem;
         }
     }
 }
@@ -185,6 +199,10 @@
         text-transform: capitalize;
         font-size: 8rem;
         font-weight: 300;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 6rem;
+        }
     }
 
     &--foot {
@@ -215,6 +233,10 @@
         text-transform: uppercase;
         font-size: 4rem;
         font-weight: 400;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 3rem;
+        }
     }
 
     &--music {
