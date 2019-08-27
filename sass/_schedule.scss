@@ -11,7 +11,7 @@
 
     clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 
-    padding: 30rem 0;
+    padding: 30rem 3rem;
 
     // margin-bottom: 10rem;
 
@@ -31,12 +31,13 @@
         margin-top: 10rem;
     }
 
-    @media only screen and (max-width: $bp-smallest) {
-        padding: 30rem 3rem;
+    @media only screen and (max-width: $bp-small) {
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     }
 
     @media only screen and (max-width: $bp-smallest) {
         margin-top: 5rem;
+
     }
 
 
